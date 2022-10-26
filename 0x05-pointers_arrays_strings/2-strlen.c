@@ -1,17 +1,11 @@
 #include "main.h"
-#include <string.h>
+#include "string.h"
 /**
- * _puts - prints a string
- * @str: a string
+ * _strlen - finds the largest of the string
+ * @s: string
  * Return: void
  */
-void _puts(char *str)
+int _strlen(char *s)
 {
-	unsigned long int i;
-
-	for (i = 0; i < strlen(str); i++)
-	{
-		_putchar(str[i]);
-	}
-	_putchar('\n');
+	return (strlen(s));
 }
